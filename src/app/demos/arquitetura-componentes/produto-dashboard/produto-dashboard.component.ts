@@ -40,7 +40,7 @@ export class ProdutoDashboardComponent implements OnInit, AfterViewInit {
       id: 3,
       nome: 'Teste 3',
       ativo: true,
-      valor: 300,
+      valor: 3000,
       imagem: 'laptop.jpg'
     },
     {
