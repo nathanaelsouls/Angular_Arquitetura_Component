@@ -25,10 +25,10 @@ export class EditarProdutoComponent implements OnInit {
   }
 
   salvar(){
-      // fazer comunicacao com o backend
+    // fazer comunicacao com o backend
 
-      this.router.navigate(['/produtos']);
-      //this.router.navigateByUrl('/produtos');
+    this.router.navigate(['/produtos']);
+    //this.router.navigateByUrl('/produtos');
   }
 
 }
