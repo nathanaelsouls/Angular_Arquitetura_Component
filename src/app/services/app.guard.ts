@@ -6,7 +6,7 @@ import { Observable } from "rxjs";
 export class AuthGuard implements CanLoad, CanActivate{
     
 
-    user = {admin: false, logged: true}
+    user = {admin: true, logged: true}
 
     canLoad(): boolean {
         return this.user.admin;
