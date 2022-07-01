@@ -21,6 +21,7 @@ import { CadastroGuard } from './services/cadastro.guard';
 import { FilmesComponent } from './demos/pipes/filmes/filmes.component';
 import { FileSizePipe } from './demos/pipes/filmes/filesize.pipe';
 import { ImageFormaterPipe } from './demos/pipes/filmes/image.pipe';
+import { BarModule } from './demos/bar-di-zones/bar.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { ImageFormaterPipe } from './demos/pipes/filmes/image.pipe';
     CadastroComponent,
     FilmesComponent,
     FileSizePipe,
-    ImageFormaterPipe
+    ImageFormaterPipe    
   ],
   imports: [
     BrowserModule,
@@ -39,7 +40,8 @@ import { ImageFormaterPipe } from './demos/pipes/filmes/image.pipe';
     TextMask.TextMaskModule,
     NgBrazil,
     CustomFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BarModule
   ],
   providers: [
     AuthGuard,
