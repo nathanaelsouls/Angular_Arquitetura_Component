@@ -62,7 +62,7 @@ export class FilmesComponent implements OnInit {
         dataLancamento: filme.dataLancamento,
         valor: filme.valor,
         tamanho: filme.tamanho,
-        imagem: this.imageFormat.transform(filme.imagem, 'default', false)
+        imagem: this.imageFormat.transform(filme.imagem, 'default', true)
       }
     });
     
