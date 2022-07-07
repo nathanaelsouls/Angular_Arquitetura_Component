@@ -53,9 +53,6 @@ export class MenuComponent {
 
 }
 
-
-
-
 interface Nav{
   link: string,
   name: string,
