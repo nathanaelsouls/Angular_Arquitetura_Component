@@ -26,6 +26,6 @@ export class Store {
     set(name: string, state: any){
         this.subject.next({
             ...this.value, [name]: state
-        })
+        });
     }
 }
