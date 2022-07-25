@@ -3,7 +3,7 @@
     {
       "id": 1,
       "nome": "Responder e-mails",
-      "finalizado": true,
+      "finalizado": false,
       "iniciado": false
     },
     {
@@ -22,7 +22,7 @@
       "id": 4,
       "nome": "Publicar feedback no LinkedIn",
       "finalizado": false,
-      "iniciado": false
+      "iniciado": true
     },
     {
       "id": 5,
@@ -47,6 +47,20 @@
       "nome": "Visitar desenvolvedor.io",
       "finalizado": false,
       "iniciado": false
+    },
+    {
+      "nome": "Desafio concluido",
+      "id": 9,
+      "finalizado": true,
+      "iniciado": false
+    },
+    {
+      "nome": "Entendo código",
+      "id": 10
+    },
+    {
+      "nome": "Explicação",
+      "id": 11
     }
   ]
 }

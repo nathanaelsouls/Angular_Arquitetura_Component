@@ -1,6 +1,7 @@
 import { CommonModule } from "@angular/common";
 import { HttpClientModule } from "@angular/common/http";
 import { NgModule } from "@angular/core";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { TasksFinalizadasComponent } from "./components/tasks-finalizadas/tasks-finalizadas.component";
 import { TasksIniciadasComponent } from "./components/tasks-iniciadas/tasks-iniciadas.component";
 import { TasksComponent } from "./components/tasks/tasks.component";
@@ -13,7 +14,9 @@ import { Store } from "./todo.store";
 @NgModule({    
     imports: [
         CommonModule,
-        HttpClientModule
+        HttpClientModule,
+        ReactiveFormsModule,
+        FormsModule
     ], 
     providers: [
         TasksService,
@@ -31,7 +34,8 @@ import { Store } from "./todo.store";
         TasksFinalizadasComponent,
         TasksIniciadasComponent,
         ToDoListComponent,
-        TasksComponent
+        TasksComponent,
+        ReactiveFormsModule
     ]  
 }) 
 export class TodoModule{ }

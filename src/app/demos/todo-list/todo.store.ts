@@ -11,6 +11,9 @@ const state: State = {
 };
 
 export class Store {
+    static getTodoList(): any {
+        throw new Error("Method not implemented.");
+    }
     private subject = new BehaviorSubject<State>(state);
     private store = this.subject.asObservable();
 
@@ -22,7 +25,7 @@ export class Store {
         return this.store
             .pipe(map(store => store.todolist));
     }
-
+    
     set(name: string, state: any){
         this.subject.next({
             ...this.value, [name]: state

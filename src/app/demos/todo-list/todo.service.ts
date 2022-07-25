@@ -20,6 +20,22 @@ export class TasksService {
     //     return this.http
     //         .get<Task[]>('http://localhost:3000/todolist')
     // }
+    
+    adicionarTarefa(novaTarefa: Task){
+        this.http
+            .post(`http://localhost:3000/todolist/`, novaTarefa)
+            .subscribe(() => {
+                
+                const value = this.store.value.todolist;
+                
+                novaTarefa.id = value.slice(-1).pop().id + 1
+                novaTarefa.finalizado = false
+                novaTarefa.iniciado = false
+
+                value.push(novaTarefa);
+                this.store.set('todolist', value);
+            });
+    }
 
     toggle(event: any) {
         this.http

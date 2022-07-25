@@ -1,5 +1,18 @@
 <div class="container main-container">
 
+    <form (ngSubmit)="adicionarTarefa()" [formGroup]="tarefaGroup">
+
+        <div class="row text-left">
+            <div class="form-group" style="padding-left: 15px;">
+                <input placeholder="Nova Tarefa" type="text" id="nome" class="form-control" formControlName="nome">
+            </div>
+            <div class="form-group" style="padding-left: 30px;">
+                <button class="btn btn-success" type="submit" id="Registrar">Criar</button>
+            </div>
+        </div>
+
+    </form>
+    <br>
     <div class="row text-center">
         <tasks class="col-md-4"></tasks>
         <tasks-iniciadas class="col-md-4"></tasks-iniciadas>
